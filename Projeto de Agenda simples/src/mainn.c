@@ -1,7 +1,8 @@
 // Projeto: Agenda simples
 // Autores: Yan Pedro e Lucas Sousa
 // Data: 17/10/2025
-// Versão 1.0
+// Versão 1.1
+
 #include <stdio.h>
 #include <string.h>
 
