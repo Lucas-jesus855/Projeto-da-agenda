@@ -56,14 +56,14 @@ Checklist
 - [OK]  Programa executa sem travamentos;
 - [OK]  Menu funciona e oferece opções claras;
 - [OK]  Dados podem ser inseridos;
-- [ ]  Validação funciona (rejeita entradas inválidas);
-- [ ]  Dados são armazenados corretamente em vetores/matrizes;
-- [ ]  Processamento produz resultados esperados;
-- [ ]  Resultados são exibidos de forma clara;
-- [ ]  Código tem nomes significativos;
-- [ ]  Funções estão bem comentadas;
-- [ ]  Indentação é consistente;
-- [ ]  Compilação não produz warnings;
-- [ ]  Testes cobrem casos principais e extremos;
-- [ ]  Bugs encontrados foram documentados e corrigidos;
-- [ ]  Documentação da Parte 1 está organizada em **`docs/` .**
+- [OK]  Validação funciona (rejeita entradas inválidas);
+- [OK]  Dados são armazenados corretamente em vetores/matrizes;
+- [OK]  Processamento produz resultados esperados;
+- [OK]  Resultados são exibidos de forma clara;
+- [OK]  Código tem nomes significativos;
+- [OK]  Funções estão bem comentadas;
+- [OK]  Indentação é consistente;
+- [OK]  Compilação não produz warnings;
+- [OK]  Testes cobrem casos principais e extremos;
+- [OK]  Bugs encontrados foram documentados e corrigidos;
+- [OK]  Documentação da Parte 1 está organizada em **`docs/` .**
