@@ -2,6 +2,8 @@ Projeto integrador
 
 Organization
 
+PARTE 1
+
 ETAPA 1
 Situação real:
  No dia a dia, muitas pessoas enfrentam dificuldades ao tentar organizar seus compromissos e tarefas de maneira prática e eficiente, especialmente quando lidam com uma agenda cheia e muito flexível. A falta de uma ferramenta que gerencie de forma eficiente e inteligente esses compromissos pode gerar esquecimentos, sobrecarga e estresse.
@@ -50,20 +52,90 @@ Salvar compromisso, ordenar por data e prioridade
 Saída
 Exibição dos compromissos e notificações
 Mostrar lista de compromissos e alertas de lembrete
+----------------------------------------------------------------------------------------------------------------------------------------------------
+PARTE 2
+As principais operações do programa são
+Adicionar compromisso o programa recebe os dados informados data, hora e descrição e armazena em vetores.
+Listar compromisso percorre os vetores e mostra todas as informações cadastradas.
+Busca por data permite ao usuário localizar compromissos específicos comparando as datas inseridas com as já registradas.
+Essas operações envolvem processamento lógico, com uso de comparações para encontrar registros e controle de dados em vetores.
+
+Acesso aos dados
+O acesso aos dados ocorre por meio de vetores, que armazenam as informações de forma organizada.
+Algumas funções utilizam ponteiros para modificar diretamente o número total de compromissos salvos, garantindo que as atualizações sejam refletidas em todo o programa.
+
+Teste da lógica
+Durante os testes foram utilizadas diferentes situações para validar o funcionamento do sistema
+Com dados válidos: o programa adicionou e exibiu corretamente as informações
+Com dados vazios: exibiu mensagens de aviso, sem travar
+Com entradas inválidas como letras no menu: apresentou mensagem de erro sem interromper a execução
+Com limite máximo atingido: mostrou aviso de agenda cheia, impedindo novos cadastros
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Função de exibição
+As datas, horas e descrições dos compromissos salvos
+As informações apresentadas em linhas organizadas, com rótulos explicativos
+A listagem segue a ordem de cadastro, do primeiro até o último compromisso inserido
+A função percorre todos os vetores de dados e mostra cada registro com numeração, facilitando a leitura e identificação de cada compromisso
+
+Formatação e clareza
+Os dados foram organizados de forma simples e legível
+Cada campo possui um rótulo Data, Hora, “Descrição” para identificar claramente o que está sendo mostrado
+Mensagens informativas orientam o usuário em todas as situações, por exemplo
+Quando não há compromissos cadastrados, aparece “Nenhum compromisso cadastrado
+Quando a agenda está cheia, o programa mostra Limite atingido
+Dessa forma, o usuário consegue entender o que está acontecendo em cada momento da execução, sem confusão
+
+Teste da exibição
+A função de exibição foi testada em diferentes situações:
+Com dados válidos todos os compromissos foram mostrados corretamente em linhas separadas
+Com dados vazios exibiu mensagem de aviso sem gerar erro;
+Com o número máximo de compromissos a exibição permaneceu organizada e legível
+Com tentativas inválidas o sistema mostrou mensagens de erro, mas continuou funcionando normalmente
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O que foi feito	O que eu esperava	O que aconteceu	Resultado
+1	Escolhi a opção 1 e cadastrei um compromisso certo	Que o compromisso fosse salvo	Mostrou “Compromisso adicionado com sucesso!
+2 Tentei colocar uma data errada 40/15/2025 Que o programa avisasse que está errado Mostrou Data inválida! Tente novamente.
+
+Testando o funcionamento
+O menu funcionou bem e só aceitou opções válidas.
+A coleta dos dados (data, hora e descrição) funcionou normal.
+A validação rejeitou informações erradas, como datas e horas fora do formato.
+O armazenamento salvou tudo direitinho nos vetores.
+A listagem mostrou os compromissos de forma clara e organizada.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Função de entrada
+O programa precisa coletar as seguintes informações do usuário:
+Data do compromisso (ex: 10/11/2025)
+Hora do compromisso (ex: 14:30)
+Descrição do compromisso (ex: Ir ao médico)
+Essas informações são todas do tipo string (texto), pois são escritas pelo usuário.
+A ordem de coleta faz sentido: primeiro a data, depois a hora e por último a descrição.
+
+Validação de entrada
+A data precisa estar no formato correto dd/mm/aaaa e com números válidos dia de 1 a 31, mês de 1 a 12
+A hora precisa estar no formato hh:mm e dentro do intervalo válido 0 a 23 horas e 0 a 59 minutos
+A descrição não pode estar vazia.
+
+Armazenamento de dados
+datas[MAX_COMPROMISSOS][11] → guarda a data
+horas[MAX_COMPROMISSOS][6] → guarda a hora
+descricoes[MAX_COMPROMISSOS][50] → guarda a descrição
 
 Checklist
-- [OK]  Código compila sem erros usando **`gcc` ;**
-- [OK]  Programa executa sem travamentos;
-- [OK]  Menu funciona e oferece opções claras;
-- [OK]  Dados podem ser inseridos;
-- [OK]  Validação funciona (rejeita entradas inválidas);
-- [OK]  Dados são armazenados corretamente em vetores/matrizes;
-- [OK]  Processamento produz resultados esperados;
-- [OK]  Resultados são exibidos de forma clara;
-- [OK]  Código tem nomes significativos;
-- [OK]  Funções estão bem comentadas;
-- [OK]  Indentação é consistente;
-- [OK]  Compilação não produz warnings;
-- [OK]  Testes cobrem casos principais e extremos;
-- [OK]  Bugs encontrados foram documentados e corrigidos;
-- [OK]  Documentação da Parte 1 está organizada em **`docs/` .**
+- [OK]  Código compila sem erros usando gcc
+- [OK]  Programa executa sem travamentos
+- [OK]  Menu funciona e oferece opções claras
+- [OK]  Dados podem ser inseridos
+- [OK]  Validação funciona (rejeita entradas inválidas)
+- [OK]  Dados são armazenados corretamente em vetores/matrizes
+- [OK]  Processamento produz resultados esperados
+- [OK]  Resultados são exibidos de forma clara
+- [OK]  Código tem nomes significativos
+- [OK]  Funções estão bem comentadas
+- [OK]  Indentação é consistente
+- [OK]  Compilação não produz warnings
+- [OK]  Testes cobrem casos principais e extremos
+- [OK]  Bugs encontrados foram documentados e corrigidos
+- [OK]  Documentação da Parte 1 está organizada em docs/
