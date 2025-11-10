@@ -2,7 +2,9 @@
 Projeto: Organization 
 Autor: Lucas Sousa e Yan Pedro
 Data de criação: 17/10/2025
-Descrição: Estrutura inicial do projeto Agenta simples. */
+Descrição: Estrutura inicial do projeto Agenta simples. 
+Versão 1.0*/
+
 
 
 
@@ -52,4 +54,5 @@ int main() {
 
     printf("Programa encerrado.\n");
     return 0;
+
 }
