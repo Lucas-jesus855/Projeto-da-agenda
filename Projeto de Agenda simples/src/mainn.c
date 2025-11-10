@@ -8,40 +8,40 @@
 
 #define MAX_COMPROMISSOS 3
 
-// Funções (protótipos)
+// Funcoes (protótipos)
 
 void adicionarCompromisso(char datas[][11], char horas[][6], char descricoes[][50], int *total);
 void listarCompromissos(char datas[][11], char horas[][6], char descricoes[][50], int total);
 
 int main() {
+    
     char datas[MAX_COMPROMISSOS][11];
     char horas[MAX_COMPROMISSOS][6];
     char descricoes[MAX_COMPROMISSOS][50];
-
     int total = 0;
     int opcao;
     int leitura;
 
     printf("+++ AGENDA SIMPLES +++\n");
-
+    
     do {
         printf("\n1 - Adicionar compromisso");
         printf("\n2 - Listar compromissos");
         printf("\n3 - Sair");
         printf("\nEscolha uma opcao: ");
 
-        // Verifica se a entrada é válida 
+        // Verifica se a entrada e valida 
 
         leitura = scanf("%d", &opcao);
 
         if (leitura != 1) { 
-            // Se o usuário digitou algo inválido (letra, símbolo, etc.)
+            // Se o usuario digitou algo invalido (letra, símbolo, etc.)
             printf("\nERRO: Entrada invalida! Digite apenas numeros.\n");
 
-            // Limpa o buffer (descarta o que foi digitado)
+            //descarta o que foi digitado
             while (getchar() != '\n');
 
-            // Continua o loop sem travar
+            // Continua sem travar
             opcao = 0;
         }
 
@@ -60,7 +60,7 @@ int main() {
     return 0;
 }
 
-// Função para adicionar compromisso
+//Funcao para adicionar compromisso
 
 void adicionarCompromisso(char datas[][11], char horas[][6], char descricoes[][50], int *total) {
     if (*total < MAX_COMPROMISSOS) {
@@ -82,7 +82,7 @@ void adicionarCompromisso(char datas[][11], char horas[][6], char descricoes[][5
     }
 }
 
-// Função para listar compromissos
+// Funcao para listar compromissos
 
 void listarCompromissos(char datas[][11], char horas[][6], char descricoes[][50], int total) {
     if (total == 0) {
