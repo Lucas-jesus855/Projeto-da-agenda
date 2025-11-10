@@ -1,2 +1,58 @@
 # Projeto-da-agenda
 agenda simples
+
+Projeto integrador
+
+Organization
+
+ETAPA 1
+Situação real:
+ No dia a dia, muitas pessoas enfrentam dificuldades ao tentar organizar seus compromissos e tarefas de maneira prática e eficiente, especialmente quando lidam com uma agenda cheia e muito flexível. A falta de uma ferramenta que gerencie de forma eficiente e inteligente esses compromissos pode gerar esquecimentos, sobrecarga e estresse.
+Proposta de solução:
+ Uma solução eficaz seria desenvolver uma agenda inteligente que, além de armazenar compromissos, seja capaz de sugerir horários livres, lembrar prazos importantes e até priorizar tarefas. Essa agenda poderia automatizar e permitir uma melhor visualização dos compromissos diários, facilitando o planejamento pessoal e profissional.
+Importância da solução:
+ A importância dessa solução está em ajudar o usuário a evitar esquecimentos, promovendo uma melhor gestão do tempo e reduzindo o impacto negativo de compromissos perdidos ou mal organizados. 
+Público-alvo:
+ Usuários que precisam gerenciar seus compromissos diários, sejam estudantes, profissionais ou qualquer pessoa com uma rotina que envolva tarefas e encontros frequentes.
+
+Principais informações que o sistema precisará armazenar:
+Data e hora dos compromissos.
+Descrição do compromisso.
+Prioridade da tarefa (baixa, média, alta).
+
+
+ETAPA 2 
+Requisitos Funcionais:
+ O sistema deve:
+Registrar compromissos na agenda.
+Excluir compromissos da agenda.
+Listar compromissos por data e prioridade.
+Exibir as informações inseridas pelo usuário
+Requisitos Não Funcionais:
+O sistema deve ser responsivo. 
+Deve exibir as informações inseridas de maneira clara e organizada.
+Estrutura de código simples e funcional.
+Tabela E/P/S (Entradas, Processamentos e Saídas):
+Tipo
+Descrição 
+Exemplo no sistema
+Entrada
+Dados dos compromissos inseridos pelo usuário
+
+
+Inserção de data, hora e descrição do compromisso
+
+
+Processamento
+Armazenar, editar e organizar os compromissos
+
+
+Salvar compromisso, ordenar por data e prioridade
+
+
+Saída
+Exibição dos compromissos e notificações
+Mostrar lista de compromissos e alertas de lembrete
+
+
+
