@@ -139,3 +139,83 @@ Checklist
 - [OK]  Testes cobrem casos principais e extremos
 - [OK]  Bugs encontrados foram documentados e corrigidos
 - [OK]  Documentação da Parte 1 está organizada em docs/
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Este projeto é um programa simples em linguagem C que permite ao usuário cadastrar tarefas, listar, marcar como concluídas e excluir.
+ A ideia é treinar o uso de structs, vetores, funções e separação de arquivos.
+
+Objetivo do Sistema
+O objetivo é criar um sistema básico onde o usuário consiga:
+Adicionar novas tarefas
+Ver todas as tarefas cadastradas
+Marcar uma tarefa como concluída
+Excluir uma tarefa
+Salvar e carregar as tarefas do arquivo
+
+
+O sistema foi feito para ser fácil de usar e simples de programar.
+
+Estruturas do Programa
+3.1 Struct usada
+A struct que guarda cada tarefa é:
+struct Tarefa {
+    char descricao[100];
+    char data[20];
+    int concluida;
+};
+
+Ela guarda:
+A descrição da tarefa
+A data
+Se está concluída ou não (0 = não / 1 = sim)
+
+Organização em Módulos
+O programa foi dividido em partes para ficar mais organizado.
+Modulo Tarefa
+Arquivo: tarefa.c
+Funções: adicionarTarefa, listarTarefas, marcarConcluida, excluirTarefa
+Esse módulo cuida de manipular as tarefas.
+
+Modulo Entrada
+Arquivo: entrada.c
+ Funções: lerLinha, lerInteiro
+Serve para ler textos e números do usuário.
+
+Modulo Saída
+Arquivo: saida.c
+Funções: exibirTitulo, exibirMensagem, exibirLista
+Mostra mensagens e lista as tarefas na tela.
+
+ModuloPersistência
+Arquivo: persistencia.c
+Funções: salvarTarefas, carregarTarefas
+Serve para salvar e carregar as tarefas no arquivo tarefas.txt.
+
+ModuloProcessamento
+Arquivo: processamento.c
+Funções: processarOpcao
+Lê a opção escolhida pelo usuário e chama a função certa.
+
+Arquivo Principal
+Arquivo: main.c
+Função: main()
+Chama o menu e controla o programa.
+
+Funcionamento do Programa
+O programa mostra o menu.
+O usuário escolhe uma opção.
+A função correspondente é chamada.
+As tarefas são guardadas em um vetor.
+As alterações podem ser salvas no arquivo.
+
+Desafios Encontrados versão iniciante
+Aprender a dividir o código em vários arquivos.
+Usar structs para guardar dados.
+Fazer a leitura correta de strings.
+Validar números digitados pelo usuário.
+Mover elementos no vetor ao excluir uma tarefa.
+Trabalhar com arquivos para salvar as tarefas.
+
+Conclusão
+O projeto ajudou a treinar conceitos importantes da programação em C, como uso de funções, structs, arquivos e organização do código.
+ Mesmo sendo simples, foi útil para aprender lógica e boas práticas.
