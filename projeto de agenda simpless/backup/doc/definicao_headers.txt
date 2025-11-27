@@ -1,0 +1,15 @@
+compromisso.h 
+Propósit: definir a estrutura de um compromisso e operações basicas  
+Conteúdo: define MAX_COMPROMISSOS struct Compromisso; protótipos para adicionar Compromisso. 
+
+entrada.h
+Propósito: melhorar a leitura dos dados do usuário
+Conteúdo: protótipos para lerString, lerInteiro.
+
+agenda.h
+Propósito: centralizar o array de compromissos e o total armazenado
+Conteúdo: declara o vetor de compromissos e o contador inclui compromisso.h.
+
+saida.h 
+Propósito: mostrar mensagens e listas formatadas na tela
+Conteúdo: protótipos para exibirTitulo, exibirMensagem, exibirLista.
