@@ -1,8 +1,0 @@
-campos
-char data[11];  data do compromisso dd/mm/aaaa
-char hora[6];  hora do compromisso hh:mm
-char descricao[50];  descrição do compromisso
-
-Array de structs
-Compromisso compromissosMAX_COMPROMISSOS
-Tamanho máximo 3 ajustável pelo #define MAX_COMPROMISSOS

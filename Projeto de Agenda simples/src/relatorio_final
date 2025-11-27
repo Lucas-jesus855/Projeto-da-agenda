@@ -1,7 +1,0 @@
-Desafios do projeto de Agenda Simples
-
-* O código ficou todo no main dificultando organização
-* Usar vários vetores separados(data, hora, descrição deixou o código mais confuso
-* O scanf não permite escrever descrições com espaços
-* Não há validação da data e da hora
-* Foi preciso tratar entrada inválida no menu para o programa não travar
